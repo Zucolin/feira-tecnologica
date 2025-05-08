@@ -18,10 +18,10 @@
     font-weight: 700;
     color: white;
     padding: 10px 12px;
-    z-index: 1000; /* garante que fique acima da imagem */
+    z-index: 1000; 
 
 }
-  /* Container principal centralizado */
+
   .container {
     position: relative;
     height: 100vh;
@@ -32,7 +32,7 @@
     overflow: hidden;
   }
   
-  /* Imagem como fundo */
+
   .container img {
     position: absolute;
     top: 0;
@@ -41,10 +41,9 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    filter: brightness(0.5); /* escurece um pouco para melhorar contraste do texto */
-  }
+    filter: brightness(0.5);
   
-  /* Conteúdo sobre a imagem */
+  }
   .container h1,
   .container .botao {
     position: relative;
@@ -53,7 +52,7 @@
     text-align: center;
   }
   
-  /* Título */
+
   h1 {
     font-size: 3em;
     margin-bottom: 30px;
@@ -61,7 +60,7 @@
     font-optical-sizing: auto;
   }
   
-  /* Botão estético */
+  
   .botao {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
@@ -95,8 +94,25 @@
     transition: color 0.3s ease;
   }
   
-  /* Hover com cor que combina (azul-ciano claro) */
+
   .menu li a:hover {
     color: #3119b8;
   }
+  .logo-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    text-decoration: none;
+  }
   
+  .logo {
+    height: 40px;
+    opacity: 0.85;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }

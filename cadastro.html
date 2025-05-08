@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="css/info.css">
 </head>
 <body>
+    <a href="index.html" class="logo-link">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnmGIoX5XBPOKaWqpuw0mYaThFGOVd6_F4Gg&s" alt="Logo" class="logo">
+    </a>
     <div class="container">
         <h1 class="titulo-pagina">Cadastro</h1>
 
         <form action="info.php" method="post">
             <div class="campo-form">
-                <label for="nome">Nome Completo:</label>
+                <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
             </div>
-
+            <div class="campo-form">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
             <div class="campo-form">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
@@ -26,10 +32,7 @@
                 <input type="date" id="data" name="data" required>
             </div>
 
-            <div class="campo-form">
-                <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto" required>
-            </div>
+            
 
             <button type="submit" class="btn">Cadastrar</button>
         </form>

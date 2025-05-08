@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="css/info.css">
 </head>
 <body>
+    <a href="index.html" class="logo-link">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnmGIoX5XBPOKaWqpuw0mYaThFGOVd6_F4Gg&s" alt="Logo" class="logo">
+    </a>
+
+    <div class="container">
     <h1>Cadastro Concluído</h1>
 
-    <!-- Exibe a mensagem de sucesso e as informações do participante -->
     <p>O participante <strong><?php echo htmlspecialchars($_POST['nome']); ?></strong> foi cadastrado com sucesso!</p>
 
+    </div>
+    
 </body>
 </html>

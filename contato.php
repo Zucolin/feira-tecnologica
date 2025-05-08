@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="css/info.css">
 </head>
 <body>
-    <h1>Envio de E-mail Concluído</h1>
+    <a href="index.html" class="logo-link">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnmGIoX5XBPOKaWqpuw0mYaThFGOVd6_F4Gg&s" alt="Logo" class="logo">
+    </a>
 
-    <!-- Exibe a mensagem de sucesso com o nome enviado -->
-    <p>O e-mail de <strong><?php echo htmlspecialchars($_POST['nome']); ?></strong> foi enviado com sucesso!</p>
+    <div class="container">
+        <h1>Envio de E-mail Concluído</h1>
 
+        <p>O e-mail de <strong><?php echo htmlspecialchars($_POST['nome']); ?></strong> foi enviado com sucesso!</p>
+    </div>
 </body>
 </html>

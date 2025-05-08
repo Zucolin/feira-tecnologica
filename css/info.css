@@ -1,7 +1,7 @@
 body {
-    background-color: #200a52;  /* Azul Ciano */
+    background-color: #200a52;
     font-family: Arial, sans-serif;
-    color: #333; /* Texto escuro por padrão */
+    color: #333; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +10,7 @@ body {
     height: 100vh;
 }
 
-/* Bloco central do formulário */
+
 .container {
     text-align: left;
     width: 100%;
@@ -21,7 +21,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Título */
+
 .container h1 {
     text-align: center;
     font-size: 28px;
@@ -29,7 +29,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Labels visíveis */
+
 label {
     display: block;
     margin-top: 15px;
@@ -38,7 +38,7 @@ label {
     font-weight: bold;
 }
 
-/* Campos do formulário */
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -69,7 +69,7 @@ button:hover {
     background-color: #011416;
 }
 
-/* Mensagem de sucesso */
+
 .sucesso {
     color: #4CAF50;
     font-size: 18px;
@@ -79,3 +79,21 @@ button:hover {
     align-items: center;
     gap: 10px;
 }
+.logo-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    text-decoration: none;
+  }
+  
+  .logo {
+    height: 40px;
+    opacity: 0.85;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
